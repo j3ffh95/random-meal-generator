@@ -24,7 +24,7 @@ function createMeal(meal) {
 
   mealContainer.innerHTML = `
     <div class="row">
-      <div class="column five">
+      <div class="columns five">
         <img src="${meal.strMealThumb}" alt="Meal Image" />
         <p><strong>Category:</strong> ${meal.strCategory}</p>
         <p><strong>Area:</strong> ${meal.strArea}</p>
@@ -34,7 +34,7 @@ function createMeal(meal) {
           ${ingredients.map((ingredient) => `<li>${ingredient}</li>`).join("")}
         </ul>
       </div>
-      <div class="column seven">
+      <div class="columns seven">
         <h4>${meal.strMeal}</h4>
         <p>${meal.strInstructions}</p>
       </div>
