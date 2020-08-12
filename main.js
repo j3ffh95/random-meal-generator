@@ -29,6 +29,10 @@ function createMeal(meal) {
         <p><strong>Category:</strong> ${meal.strCategory}</p>
         <p><strong>Area:</strong> ${meal.strArea}</p>
         <p><strong>Tags:</strong> ${meal.strTags.split(",").join(", ")}</p>
+        <h5>Ingredients</h5>
+        <ul>
+          ${ingredients.map((ingredient) => `<li>${ingredient}</li>`).join("")}
+        </ul>
       </div>
       <div class="column seven">
         <h4>${meal.strMeal}</h4>
