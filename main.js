@@ -9,3 +9,20 @@ getMealBtn.addEventListener("click", () => {
       createMeal(res.meals[0]);
     });
 });
+
+function createMeal(meal) {
+  mealContainer.innerHTML = `
+    <div class="row">
+      <div class="column five">
+        <img src="${meal.strMealThumb}" alt="Meal Image" />
+        <p><strong>Category:</strong> ${meal.strCategory}</p>
+        <p><strong>Area:</strong> ${meal.strArea}</p>
+        <p><strong>Tags:</strong> ${meal.strTags.split(",").join(", ")}</p>
+      </div>
+      <div class="column seven">
+        <h4>${meal.strMeal}</h4>
+        <p>${meal.strInstructions}</p>
+      </div>
+    </div>
+  `;
+}
