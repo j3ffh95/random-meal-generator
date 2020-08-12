@@ -39,5 +39,13 @@ function createMeal(meal) {
         <p>${meal.strInstructions}</p>
       </div>
     </div>
+    <div class="row">
+      <h5>Video Recipe</h5>
+      <div class="videoWrapper">
+        <iframe src="https://www.youtube.com/embed/${meal.strYoutube.slice(
+          -11
+        )}"  />
+      </div>
+    </div>
   `;
 }
