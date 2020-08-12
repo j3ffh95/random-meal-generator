@@ -11,6 +11,17 @@ getMealBtn.addEventListener("click", () => {
 });
 
 function createMeal(meal) {
+  const ingredients = [];
+  for (let i = 1; i <= 20; i++) {
+    if (meal[`strIngredient${i}`]) {
+      ingredients.push(
+        `${meal[`strIngredient${i}`]} - ${meal[`strMeasure${i}`]}`
+      );
+    } else {
+      break;
+    }
+  }
+
   mealContainer.innerHTML = `
     <div class="row">
       <div class="column five">
