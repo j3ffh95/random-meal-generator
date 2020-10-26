@@ -15,3 +15,6 @@ Generate a random meal from an API.
 - HTML
 - CSS
 - JavaScript
+
+## Live Demo
+https://j3ffh95.github.io/random-meal-generator/
